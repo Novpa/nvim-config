@@ -1,5 +1,5 @@
 
-vim.lsp.enable({ "html", "cssls" })
+vim.lsp.enable({ "html", "cssls", "pylsp" })
 
 -- Pylsp dengan config
 vim.lsp.config("pylsp", {
