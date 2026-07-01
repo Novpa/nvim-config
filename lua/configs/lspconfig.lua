@@ -20,4 +20,20 @@ vim.lsp.config("pylsp", {
   },
 })
 
+vim.diagnostic.config({
+  severity_sort = true,
+  underline = {
+    severity = { min = vim.diagnostic.severity.ERROR } 
+  },
+  virtual_text = {
+    spacing = 4,
+    prefix = "■",
+    severity = { min = vim.diagnostic.severity.ERROR } 
+  },
+  signs = {
+    severity = { min = vim.diagnostic.severity.ERROR } 
+  },
+  update_in_insert = false,
+})
+
 vim.lsp.enable({ "html", "cssls", "pylsp" })
