@@ -1,20 +1,23 @@
+local nvlsp = require "nvchad.configs.lspconfig"
 
-vim.lsp.enable({ "html", "cssls", "pylsp" })
+for _, server in ipairs({ "html", "cssls" }) do
+  vim.lsp.config(server, {
+    capabilities = nvlsp.capabilities,
+  })
+end
 
--- Pylsp dengan config
 vim.lsp.config("pylsp", {
+  capabilities = nvlsp.capabilities,
   settings = {
     pylsp = {
       plugins = {
         pycodestyle = {
-          ignore = { "W391", "E501"},
-          maxLineLength = 100
-        }
-      }
-    }
-  }
+          ignore = { "W391", "E501" },
+          maxLineLength = 100,
+        },
+      },
+    },
+  },
 })
 
-vim.lsp.enable("pylsp")
-
--- read :h vim.lsp.config for changing options of lsp servers 
+vim.lsp.enable({ "html", "cssls", "pylsp" })
