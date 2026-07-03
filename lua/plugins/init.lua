@@ -13,6 +13,16 @@ return {
     end,
   },
 
+    -- todo nvim
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
+    config = function()
+      require "configs.todo"
+    end
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
