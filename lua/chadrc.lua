@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "obsidian-ember",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -14,11 +14,39 @@ M.base46 = {
 	-- },
 }
 
--- M.nvdash = { load_on_startup = true }
--- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
--- }
+M.nvdash = { 
+  load_on_startup = true,
+  header = {
+  "",
+  "          (  )   (   )  )",
+  "           ) (   )  (  (",
+  "           ( )  (    ) )",
+  "              _____________       ",
+  "             <_____________> ___  ",
+  "             |             |/ _ \\ ",
+  "             |  C O F F E E| / \\ |",
+  "             |     &&      | \\_/ |",
+  "             |   C O D E   |\\___/ ",
+  "             \\             /      ",
+  "              `-----------'       ",
+  "           [ DEV // SLEEP=0 ]     ",
+  "",
+  },
+}
+
+M.ui = {
+      tabufline = {
+         lazyload = false
+     },
+
+     statusline = {
+       theme = "minimal",
+       separator_style = "block"
+     },
+
+     cmp = {
+       style ="atom"
+     },
+}
 
 return M
