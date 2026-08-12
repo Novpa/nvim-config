@@ -6,9 +6,10 @@ return {
       "ConformInfo"
     },
     
-    config = function ()
-      require("configs.conform")
-    end
+     config = function()
+    local options = require("configs.conform") -- Ini memanggil file conform.lua Anda
+    require("conform").setup(options)
+  end,
   },
 
   -- These are some examples, uncomment them if you want to see them work!

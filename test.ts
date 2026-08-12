@@ -1,6 +1,6 @@
 
 
-const data: string[] = ["data"]
+const data : string[] = ["data"]
  const dataTesting = "data"
 console.log(data)
 

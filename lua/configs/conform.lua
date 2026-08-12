@@ -1,14 +1,14 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    css = { "prettierd", "prettier" },
-    html = { "prettierd", "prettier" },
-    javascript = { "prettierd", "prettier" },
-    javascriptreact = { "prettierd", "prettier" },
-    typescript = { "prettierd", "prettier" },
-    typescriptreact = { "prettierd", "prettier" },
-    json = { "prettierd", "prettier" },
-     markdown = { "prettierd" },
+    css = { "prettierd", "prettier", stop_after_first = true },
+    html = { "prettierd", "prettier", stop_after_first = true },
+    javascript = { "prettierd", "prettier", stop_after_first = true },
+    javascriptreact = { "prettierd", "prettier", stop_after_first = true },
+    typescript = { "prettierd", "prettier", stop_after_first = true },
+    typescriptreact = { "prettierd", "prettier", stop_after_first = true },
+    json = { "prettierd", "prettier", stop_after_first = true },
+    markdown = { "prettierd", "prettier", stop_after_first = true },
   },
 
   format_on_save = {
