@@ -1,11 +1,7 @@
-
-
-const data : string[] = ["data"]
- const dataTesting = "data"
-console.log(data)
+const data: string[] = ["data"];
+const dataTesting = "data";
+console.log(data);
 
 data.map((data) => {
-  data.trim()
-})
-
-
+  data.trim();
+});
