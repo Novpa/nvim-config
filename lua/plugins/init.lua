@@ -83,4 +83,12 @@ return {
       -- min_vertical_distance_smear = 3,
     },
   },
+
+  {
+    "shellRaining/hlchunk.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require "configs.chunk"
+    end,
+  },
 }
