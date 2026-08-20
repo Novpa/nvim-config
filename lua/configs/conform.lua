@@ -9,6 +9,7 @@ local options = {
     typescriptreact = { "prettierd", "prettier", stop_after_first = true },
     json = { "prettierd", "prettier", stop_after_first = true },
     markdown = { "prettierd", "prettier", stop_after_first = true },
+    vue = { "prettierd", "prettier", stop_after_first = true },
   },
 
   format_on_save = {

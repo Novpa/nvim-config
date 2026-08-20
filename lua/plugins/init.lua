@@ -17,6 +17,13 @@ return {
   },
 
   {
+    "brianhuster/live-preview.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim" }, -- Optional picker integration
+    lazy = false, -- Prevent Lazy from ignoring the plugin until needed
+    config = true, -- Automatically runs require("live-preview").setup()
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -91,4 +98,26 @@ return {
       require "configs.chunk"
     end,
   },
+
+
+  {
+    "windwp/nvim-ts-autotag",
+    event = { "BufReadPre", "BufNewFile" },
+    opts = {
+      opts = {
+        enable_close = true,          -- Auto-close tag saat ketik>
+        enable_rename = true,         -- Auto-rename tag pasangan saat tag pembuka/penutup diedit
+        enable_close_on_slash = true, -- Auto-close saat ketik </},
+      filetypes = {
+        "html",
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact",
+        "vue",
+        "xml",
+      },
+    },
+  },
+}
 }

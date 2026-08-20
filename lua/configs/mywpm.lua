@@ -22,7 +22,7 @@ require("mywpm").setup {
 
   -- position of virtual wpm position
   -- available `eol`, `right_align`, `inline`
-  virt_wpm_pos = "inline",
+  virt_wpm_pos = "eol",
 
   -- follow the cursor when insert mode
   -- default (false)
