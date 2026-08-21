@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.opt.relativenumber = true
 
--- Save whenever you leave Insert mode or modify text in Normal mode
 vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
   pattern = "*",
   command = "silent! wall",
