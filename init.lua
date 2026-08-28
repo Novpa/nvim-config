@@ -20,7 +20,7 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
 
 local lazy_config = require "configs.lazy"
 
--- load plugins
+-- load the plugins
 require("lazy").setup({
   {
     "NvChad/NvChad",
@@ -32,7 +32,7 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
--- load theme
+-- load the theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
